@@ -20,6 +20,10 @@ author:
     - label: "Google Scholar"
       icon: "fas fa-fw fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=uXbuO-sAAAAJ&hl=en"
+    - label: "Kaggle"
+      icon: "fab fa-fw fa-kaggle"
+      url: "https://www.kaggle.com/jdlfuentec"
+
 
 
 defaults:
@@ -50,3 +54,7 @@ include:
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
+  - jekyll-feed
+
+header_scripts:
+  - "<link rel='icon' href='assets/images/favicon.ico' type='image/x-icon'>"
