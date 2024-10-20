@@ -1,4 +1,4 @@
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@latest"
 
 title: "Jesús de la Fuente Cedeño"
 
