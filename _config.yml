@@ -48,3 +48,6 @@ include:
   - _pages
 
 remote_theme: mmistakes/minimal-mistakes@latest
+
+plugins:
+  - jekyll-remote-theme
