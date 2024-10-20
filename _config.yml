@@ -1,4 +1,4 @@
-remote_theme: "mmistakes/minimal-mistakes@latest"
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
 title: "Jesús de la Fuente Cedeño"
 
@@ -46,3 +46,7 @@ assets:
 
 include:
   - _pages
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
