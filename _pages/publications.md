@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Preprints & Publications"
+title: ""
 permalink: /publications/
 ---
 
