@@ -7,10 +7,6 @@ permalink: /publications/
 
 ### Preprints
 
-- [**Interpretable Causal Representation Learning for Biological Data in the Pathway Space**](https://openreview.net/forum?id=NjlafBAahz)  
-  *AIDrugX, NeurIPS 2024 Poster*  
-  **Jesús de la Fuente Cedeño**, Robert Lehmann, Carlos Ruiz-Arenas, Irene Marín-Goñi, Jan Voges, Xabier Martinez de Morentin, David Gomez-Cabrero, Idoia Ochoa, Jesper Tegnér, Vincenzo Lagani, Mikel Hernaez
-
 - [**Sweetwater: An interpretable and adaptive autoencoder for efficient tissue deconvolution**](https://arxiv.org/abs/2311.12670)  
   *Under review at Nucleic Acid Research, 2023*  
   **Jesús de la Fuente<sup>*</sup>**, **Naroa Legarra<sup>*</sup>**, Aintzane Diaz-Mazkiaran, Guillermo Serrano, Irene Marín-Goñi, Markel Benito Sendin, Ana García Osta, Krishna R. Kalari, Carlos Fernandez-Granda, Idoia Ochoa, Mikel Hernaez
@@ -21,6 +17,10 @@ permalink: /publications/
 
 
 ### Publications
+
+- [**Interpretable Causal Representation Learning for Biological Data in the Pathway Space**](https://openreview.net/forum?id=3Fgylj4uqL)  
+  *ICLR 2025, Poster*  
+  **Jesús de la Fuente Cedeño**, Robert Lehmann, Carlos Ruiz-Arenas, Irene Marín-Goñi, Jan Voges, Xabier Martinez de Morentin, David Gomez-Cabrero, Idoia Ochoa, Jesper Tegnér, Vincenzo Lagani, Mikel Hernaez
 
 - [**Towards a more inductive world for drug repurposing approaches**](https://openreview.net/attachment?id=ZhBwSxbJbu&name=pdf)  
   *Nature Machine Intelligence, 2024*  
