@@ -3,10 +3,10 @@ remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 title: "Jesús de la Fuente Cedeño"
 
 author:
-  name: "Jesús de la Fuente Cedeño"
+  name: "Jesús de la Fuente Cedeño, Ph.D."
   avatar: "/assets/images/profile.jpeg" # Ensure your image is correctly uploaded
-  bio: "Ph.D. candidate in Machine Learning and Computational Biology."
-  location: "Barcelona, Spain"
+  bio: "Ph.D. in Machine Learning and Computational Biology."
+  location: "Pamplona, Spain"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
