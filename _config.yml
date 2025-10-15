@@ -6,7 +6,7 @@ author:
   name: "Jesús de la Fuente Cedeño"
   avatar: "/assets/images/profile.jpeg" # Ensure your image is correctly uploaded
   bio: "Ph.D. in Machine Learning and Computational Biology."
-  location: "Pamplona, Spain"
+  location: "Almería, Spain"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
