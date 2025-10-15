@@ -1,54 +1,69 @@
----
-# Front matter for Jekyll processing
----
-@import "minimal-mistakes"; /* Ensure this path is correct */
-
+--- # Front matter for Jekyll processing ---
+/* Ensure this path is correct */
+@import "minimal-mistakes";
 
 // page
 
+// .page {
+//   max-width: 1000px; /* Increase this value to make the body wider */
+//   margin: 0 auto; /* Center the content */
+// }
+
+
 .page {
-  max-width: 1000px; /* Increase this value to make the body wider */
-  margin: 0 auto; /* Center the content */
+  transform: scale(1.25);
+  transform-origin: top left;
+  width: 80%; // Adjust width to compensate for scaling
 }
 
 .single .page__content {
-  max-width: 1000px; /* Ensure content aligns with the wider page */
-  padding: 0 20px; /* Adjust padding for better spacing */
+  max-width: 1000px;
+  /* Ensure content aligns with the wider page */
+  padding: 0 20px;
+  /* Adjust padding for better spacing */
 }
 
 @media (min-width: 1024px) {
-  .page, .single .page__content {
-      max-width: 1000px;
-      padding: 0 20px;
+
+  .page,
+  .single .page__content {
+    max-width: 1000px;
+    padding: 0 20px;
   }
 }
 
 // sidebar
 
-@media (min-width: 64em) { 
-  .sidebar { 
-    float: left; 
-    width: calc(250px - 1em); 
-    opacity: 1; /* Start with full opacity */
-    -webkit-transition: none; /* Disable any transition effects */
-    transition: none; /* Disable any transition effects */
-  }
-  
-  .sidebar:hover { 
-    opacity: 1; /* Keep opacity consistent on hover */
+@media (min-width: 64em) {
+  .sidebar {
+    float: left;
+    width: calc(250px - 1em);
+    opacity: 1;
+    /* Start with full opacity */
+    -webkit-transition: none;
+    /* Disable any transition effects */
+    transition: none;
+    /* Disable any transition effects */
   }
 
-  .sidebar.sticky { 
-    overflow-y: auto; 
-    max-height: calc(100vh - 2em - 2em); 
-  } 
+  .sidebar:hover {
+    opacity: 1;
+    /* Keep opacity consistent on hover */
+  }
+
+  .sidebar.sticky {
+    overflow-y: auto;
+    max-height: calc(100vh - 2em - 2em);
+  }
 
 
 
   .author__avatar img {
-    width: 200px !important; /* Adjust the value as needed */
-    height: auto !important; /* Maintain aspect ratio */
-    max-width: none !important; 
+    width: 200px !important;
+    /* Adjust the value as needed */
+    height: auto !important;
+    /* Maintain aspect ratio */
+    max-width: none !important;
     max-height: none !important;
     display: block;
     margin: 0 auto;
@@ -57,12 +72,14 @@
 }
 
 .main {
-  margin-left: 320px; /* Set this to the new sidebar width + some padding */
+  margin-left: 320px;
+  /* Set this to the new sidebar width + some padding */
 }
 
 /* Example: Reduce overall font size */
 body {
-  font-size: 18px; /* Adjust as desired */
+  font-size: 18px;
+  /* Adjust as desired */
   text-align: justify;
 }
 
@@ -73,13 +90,17 @@ body {
 /* Right-align the navigation menu */
 .masthead__menu {
   display: flex;
-  justify-content: space-between; /* Ensures space between the site title and nav items */
-  align-items: center; /* Vertically align items */
+  justify-content: space-between;
+  /* Ensures space between the site title and nav items */
+  align-items: center;
+  /* Vertically align items */
 }
 
 .greedy-nav .visible-links {
-  margin-left: auto; /* Push the menu to the right */
-  display: flex; /* Make sure the items are in a row */
-  justify-content: flex-end; /* Align items to the end */
+  margin-left: auto;
+  /* Push the menu to the right */
+  display: flex;
+  /* Make sure the items are in a row */
+  justify-content: flex-end;
+  /* Align items to the end */
 }
-
