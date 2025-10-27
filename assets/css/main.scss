@@ -1,13 +1,14 @@
---- # Front matter for Jekyll processing ---
-/* Ensure this path is correct */
+--- # Front matter for Jekyll processing --- // imports
+
 @import "minimal-mistakes";
 
 // page
 
 .page {
-  transform: scale(1);
-  transform-origin: top left;
-  width: 100%; // Adjust width to compensate for scaling
+  max-width: 1000px;
+  /* Increase this value to make the body wider */
+  margin: 0 auto;
+  /* Center the content */
 }
 
 .single .page__content {
