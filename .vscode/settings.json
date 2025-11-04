@@ -1,0 +1,14 @@
+{
+    // Ensure Black is used only for Python
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
+    },
+    // Disable format-on-save for SCSS so formatters won't change main.scss
+    "[scss]": {
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": null
+    },
+    // (Optional) disable format-on-save globally while you debug
+    "editor.formatOnSave": true
+}

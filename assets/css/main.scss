@@ -1,12 +1,17 @@
---- # Front matter for Jekyll processing --- // imports
+// some customizations to the Minimal Mistakes theme
 
+--- 
+# Front matter required so Jekyll compiles this SCSS 
+--- 
+
+// Now some imports
 @import "minimal-mistakes";
 
 // page
 
 .page {
-  max-width: 1000px;
-  /* Increase this value to make the body wider */
+  max-width: 900px;
+  /* reduced from 1000px to make layout less zoomed */
   margin: 0 auto;
   /* Center the content */
 }
@@ -32,7 +37,8 @@
 @media (min-width: 64em) {
   .sidebar {
     float: left;
-    width: calc(250px - 1em);
+    width: 220px;
+    /* reduced from 250px */
     opacity: 1;
     /* Start with full opacity */
     -webkit-transition: none;
@@ -54,27 +60,32 @@
 
 
   .author__avatar img {
-    width: 200px !important;
-    /* Adjust the value as needed */
+    width: 240px !important;
+    /* increased avatar size */
     height: auto !important;
-    /* Maintain aspect ratio */
     max-width: none !important;
     max-height: none !important;
     display: block;
     margin: 0 auto;
   }
-
 }
 
+/* make avatar larger on smaller screens too */
+.author__avatar img {
+  width: 160px;
+  height: auto;
+}
+
+/* adjust main content offset to match new sidebar width */
 .main {
-  margin-left: 320px;
-  /* Set this to the new sidebar width + some padding */
+  margin-left: 260px;
+  /* was 320px, lowered to match sidebar + padding */
 }
 
-/* Example: Reduce overall font size */
+/* reduce base text size to look less zoomed */
 body {
-  font-size: 18px;
-  /* Adjust as desired */
+  font-size: 16px;
+  /* reduced from 18px */
   text-align: justify;
 }
 
@@ -98,4 +109,69 @@ body {
   /* Make sure the items are in a row */
   justify-content: flex-end;
   /* Align items to the end */
+}
+
+/* Stronger size overrides to make the site look smaller and keep avatar large */
+html {
+  /* Reduce base so rem-based typography shrinks across the theme */
+  font-size: 14px;
+  /* ~87.5% of default 16px */
+}
+
+body {
+  /* safety fallback for any rules using px */
+  font-size: 0.95rem !important;
+  line-height: 1.5;
+}
+
+/* Slightly narrower content so text blocks look less "zoomed" */
+.page,
+.single .page__content {
+  max-width: 820px !important;
+}
+
+/* Reduce heading sizes a bit */
+.page__title,
+h1 {
+  font-size: 1.6rem !important;
+}
+
+h2 {
+  font-size: 1.25rem !important;
+}
+
+h3 {
+  font-size: 1.05rem !important;
+}
+
+/* Paragraphs / lists */
+.post-content,
+.page p,
+.page li {
+  font-size: 0.95rem !important;
+}
+
+/* Keep avatar prominent but not huge */
+@media (min-width: 64em) {
+  .author__avatar img {
+    width: 220px !important;
+    /* slightly reduced from 240 to keep balance */
+    height: auto !important;
+  }
+
+  .main {
+    margin-left: 240px !important;
+    /* match sidebar/avatar width */
+  }
+}
+
+/* Small screens: moderate avatar */
+.author__avatar img {
+  width: 150px !important;
+  height: auto !important;
+}
+
+/* Ensure nav/menu spacing still works */
+.masthead__menu {
+  font-size: 0.95rem !important;
 }
