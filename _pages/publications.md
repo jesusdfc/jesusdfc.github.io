@@ -7,7 +7,7 @@ permalink: /publications/
 
 ### Preprints
 
-- [**Sweetwater: An interpretable and adaptive autoencoder for efficient tissue deconvolution**](https://arxiv.org/abs/2311.12670)  
+- [**Sweetwater: An interpretable and adaptive autoencoder for efficient tissue deconvolution**](https://doi.org/10.1093/nar/gkaf821)  
   *Published at Nucleic Acid Research, 2023*  
   **Jesús de la Fuente<sup>*</sup>**, **Naroa Legarra<sup>*</sup>**, Aintzane Diaz-Mazkiaran, Guillermo Serrano, Irene Marín-Goñi, Markel Benito Sendin, Ana García Osta, Krishna R. Kalari, Carlos Fernandez-Granda, Idoia Ochoa, Mikel Hernaez
 

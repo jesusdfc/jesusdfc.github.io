@@ -1,30 +1,23 @@
-// some customizations to the Minimal Mistakes theme
-
 --- 
 # Front matter required so Jekyll compiles this SCSS 
 --- 
 
-// Now some imports
 @import "minimal-mistakes";
 
 // page
-
 .page {
-  max-width: 900px;
-  /* reduced from 1000px to make layout less zoomed */
-  margin: 0 auto;
-  /* Center the content */
+  max-width: 860px; /* slightly wider so content looks centered */
+  /* move page slightly down (bottom) */
+  margin: 28px auto 0;
+  padding-top: 6px;
 }
 
 .single .page__content {
   max-width: 1000px;
-  /* Ensure content aligns with the wider page */
   padding: 0 20px;
-  /* Adjust padding for better spacing */
 }
 
 @media (min-width: 1024px) {
-
   .page,
   .single .page__content {
     max-width: 1000px;
@@ -33,35 +26,24 @@
 }
 
 // sidebar
-
 @media (min-width: 64em) {
   .sidebar {
     float: left;
-    width: 220px;
-    /* reduced from 250px */
+    width: 200px; /* reduce sidebar width so main is more centered */
     opacity: 1;
-    /* Start with full opacity */
     -webkit-transition: none;
-    /* Disable any transition effects */
     transition: none;
-    /* Disable any transition effects */
   }
 
-  .sidebar:hover {
-    opacity: 1;
-    /* Keep opacity consistent on hover */
-  }
+  .sidebar:hover { opacity: 1; }
 
   .sidebar.sticky {
     overflow-y: auto;
     max-height: calc(100vh - 2em - 2em);
   }
 
-
-
   .author__avatar img {
-    width: 240px !important;
-    /* increased avatar size */
+    width: 260px !important; /* larger avatar */
     height: auto !important;
     max-width: none !important;
     max-height: none !important;
@@ -70,108 +52,84 @@
   }
 }
 
-/* make avatar larger on smaller screens too */
-.author__avatar img {
-  width: 160px;
-  height: auto;
-}
+/* avatar for smaller screens */
+.author__avatar img { width: 180px; height: auto; }
 
-/* adjust main content offset to match new sidebar width */
-.main {
-  margin-left: 260px;
-  /* was 320px, lowered to match sidebar + padding */
-}
+/* main offset: move main text a bit more to the left */
+.main { margin-left: 160px !important; } /* was 220/240 */
 
-/* reduce base text size to look less zoomed */
-body {
-  font-size: 16px;
-  /* reduced from 18px */
-  text-align: justify;
-}
-
-.post-content {
-  text-align: justify;
-}
-
-/* Right-align the navigation menu */
-.masthead__menu {
-  display: flex;
-  justify-content: space-between;
-  /* Ensures space between the site title and nav items */
-  align-items: center;
-  /* Vertically align items */
-}
-
-.greedy-nav .visible-links {
-  margin-left: auto;
-  /* Push the menu to the right */
-  display: flex;
-  /* Make sure the items are in a row */
-  justify-content: flex-end;
-  /* Align items to the end */
-}
-
-/* Stronger size overrides to make the site look smaller and keep avatar large */
-html {
-  /* Reduce base so rem-based typography shrinks across the theme */
-  font-size: 14px;
-  /* ~87.5% of default 16px */
-}
+/* Typography tweaks: slightly larger overall type for readability */
+:root { font-size: 16px !important; } /* increased from 15px */
 
 body {
-  /* safety fallback for any rules using px */
-  font-size: 0.95rem !important;
-  line-height: 1.5;
+  font-size: 1.06rem !important; /* slightly larger */
+  line-height: 1.65 !important;
+  text-align: justify; /* justify text */
 }
 
-/* Slightly narrower content so text blocks look less "zoomed" */
+/* slightly narrower content width so lines are comfortable */
 .page,
 .single .page__content {
-  max-width: 820px !important;
+  max-width: 860px !important;
 }
 
-/* Reduce heading sizes a bit */
+/* Headings scaled up to match base size */
 .page__title,
-h1 {
-  font-size: 1.6rem !important;
-}
+h1 { font-size: 1.85rem !important; }
 
-h2 {
-  font-size: 1.25rem !important;
-}
+h2 { font-size: 1.45rem !important; }
 
-h3 {
-  font-size: 1.05rem !important;
-}
+h3 { font-size: 1.2rem !important; }
 
 /* Paragraphs / lists */
 .post-content,
 .page p,
 .page li {
-  font-size: 0.95rem !important;
+  font-size: 1.05rem !important;
 }
 
-/* Keep avatar prominent but not huge */
+/* Keep avatar balanced with larger text */
 @media (min-width: 64em) {
-  .author__avatar img {
-    width: 220px !important;
-    /* slightly reduced from 240 to keep balance */
-    height: auto !important;
+  .author__avatar img { width: 260px !important; height: auto !important; }
+  /* keep the left shift on wide screens as well */
+  .main { margin-left: 160px !important; } /* reduced from 200px */
+}
+
+/* Small screens */
+.author__avatar img { width: 180px !important; height: auto !important; }
+
+/* Navigation spacing */
+.masthead__menu { 
+  font-size: 1.1rem !important; /* increased font size */
+  display: flex; 
+  align-items: center; 
+}
+.greedy-nav .visible-links { 
+  margin-left: auto; 
+  display: flex; 
+  justify-content: flex-end; 
+}
+
+/* Force content to shift left slightly — target common theme wrappers and use high specificity */
+/* Desktop tweak */
+@media (min-width: 64em) {
+  .single .page__content,
+  .page__content,
+  .site-main,
+  .content,
+  .post-content,
+  .main,
+  .page {
+    left: -160px !important;
   }
-
-  .main {
-    margin-left: 240px !important;
-    /* match sidebar/avatar width */
-  }
 }
 
-/* Small screens: moderate avatar */
-.author__avatar img {
-  width: 150px !important;
-  height: auto !important;
+/* Make sidebar text larger */
+.author__name {
+  font-size: 1.3rem !important; /* larger author name */
 }
 
-/* Ensure nav/menu spacing still works */
-.masthead__menu {
-  font-size: 0.95rem !important;
+.author__bio {
+  font-size: 1.1rem !important; /* larger bio text */
 }
+

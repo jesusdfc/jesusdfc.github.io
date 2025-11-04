@@ -1,10 +1,10 @@
 ---
 layout: single
-title: "Courses taught"
+title: ""
 permalink: /teaching/
 ---
 
-I have been a Teaching Assistant for the following courses at University of Navarra:
+I've served as an Teaching Assistant for the following courses at University of Navarra:
 
 - **Machine Learning II**  
   *Spring 2021*
