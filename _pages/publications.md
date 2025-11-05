@@ -15,7 +15,7 @@ permalink: /publications/
 ### Publications
 
 - [**Sweetwater: An interpretable and adaptive autoencoder for efficient tissue deconvolution**](https://doi.org/10.1093/nar/gkaf821)  
-  *Published at Nucleic Acid Research, 2023*  
+  *Published at Nucleic Acid Research, 2025*  
   **Jesús de la Fuente<sup>*</sup>**, **Naroa Legarra<sup>*</sup>**, Aintzane Diaz-Mazkiaran, Guillermo Serrano, Irene Marín-Goñi, Markel Benito Sendin, Ana García Osta, Krishna R. Kalari, Carlos Fernandez-Granda, Idoia Ochoa, Mikel Hernaez
 
 - [**Interpretable Causal Representation Learning for Biological Data in the Pathway Space**](https://openreview.net/forum?id=3Fgylj4uqL)  
@@ -23,7 +23,7 @@ permalink: /publications/
   **Jesús de la Fuente Cedeño**, Robert Lehmann, Carlos Ruiz-Arenas, Irene Marín-Goñi, Jan Voges, Xabier Martinez de Morentin, David Gomez-Cabrero, Idoia Ochoa, Jesper Tegnér, Vincenzo Lagani, Mikel Hernaez
 
 - [**Towards a more inductive world for drug repurposing approaches**](https://openreview.net/attachment?id=ZhBwSxbJbu&name=pdf)  
-  *Nature Machine Intelligence, 2024*  
+  *Nature Machine Intelligence, 2025*  
   **Jesús de la Fuente<sup>*</sup>**, Guillermo Serrano<sup>*</sup>, Uxía Veleiro<sup>*</sup>, Mikel Casals, Laura Vera, Marija Pizurica, Nuria Gómez-Cebrián, Leonor Puchades-Carrasco, Antonio Pineda-Lucena, Idoia Ochoa, Silve Vicent, Olivier Gevaert, Mikel Hernaez
 
 - [**Application of graph models to the identification of transcriptomic oncometabolic pathways in human hepatocellular carcinoma**](https://www.mdpi.com/2218-273X/14/6/653/pdf)  
